@@ -15,7 +15,7 @@ let package = Package(
         .target(
             name: "grid_ios",
             dependencies: [],
-            path: "grid_ios"
+            path: "grid-ios"
         ),
         .testTarget(
             name: "grid_iosTests",
