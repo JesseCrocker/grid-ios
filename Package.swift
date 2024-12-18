@@ -2,25 +2,25 @@
 import PackageDescription
 
 let package = Package(
-    name: "grid-ios",
+    name: "grid_ios",
     platforms: [
         .iOS(.v12)
     ],
     products: [
         .library(
-            name: "grid-ios",
-            targets: ["grid-ios"]),
+            name: "grid_ios",
+            targets: ["grid_ios"]),
     ],
     targets: [
         .target(
-            name: "grid-ios",
+            name: "grid_ios",
             dependencies: [],
-            path: "grid-ios"
+            path: "grid_ios"
         ),
         .testTarget(
-            name: "grid-iosTests",
-            dependencies: ["grid-ios"],
-            path: "grid-iosTests",
+            name: "grid_iosTests",
+            dependencies: ["grid_ios"],
+            path: "grid_iosTests",
             exclude: ["Info.plist"]
         ),
     ]
