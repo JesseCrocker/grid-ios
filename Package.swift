@@ -11,10 +11,13 @@ let package = Package(
             name: "grid_ios",
             targets: ["grid_ios"]),
     ],
+    dependencies: [
+        .package(name: "color_ios", url: "https://github.com/jessecrocker/color-ios.git", .branch("swift-package")),
+    ],
     targets: [
         .target(
             name: "grid_ios",
-            dependencies: [],
+            dependencies: ["color_ios"],
             path: "grid-ios"
         ),
         .testTarget(
